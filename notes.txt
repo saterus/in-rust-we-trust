@@ -1,0 +1,130 @@
+what is rust all about?
+best of c++/haskell/python
+  - quite lot of new language concepts
+  - smaller than c++
+  - much bigger than javascript
+  - highlights today
+
+context:
+- practical, safe, static, concurrent, systems language
+
+
+replace some c++ code, gradually
+aim to be a solution suitable for X to get Y
+  - cpu bound -> multicore -> concurrent
+  - low latency -> 16.6ms -> games
+  - i/o bound -> highly concurrent -> web servers
+  - memory constrained -> embedded software
+  - coop/inter-operative -> great c ffi -> os dev
+  - portability -> llvm -> multiplatform
+  - high security -> crypto libraries
+  - high reliability -> high cost of bugs / high cost of redeployment
+  - writing software -> modern features / expressiveness -> focus on solving your problem
+
+implications
+- keep the c abstract machine
+- no runtime
+- no gc
+- zero cost abstractions
+
+zero cost abstractions
+- compile time, not runtime
+- idea from design of c++
+- memory management
+- generics
+- traits
+- iterators
+- enums/structs
+
+better programmer interface
+- immutability by default
+- type inference
+- enums / algebraic data types
+- pervasive destructuring
+- iterators
+- closures
+- hygenic macros
+- testing
+- module system
+- package management
+
+what does rust choose to get rid of?
+- garbage collector / runtime
+- memory management footguns!
+  - dangling pointers
+  - double frees
+  - never frees
+  - pointer arithmetic
+- shared mutable state / aliasing
+- null / nil
+- implicit type conversions
+- exceptions / unwinding
+- inheritance
+- function overloading
+- header files
+- global namespace
+- Makefiles
+
+safety & unsafety
+- memory safety
+- data race safety
+- compile time
+- rust can't save you entirely
+  - i/o
+  - int overflow
+  - deadlocks
+  - rc cycle leaks
+
+types of memory management
+- manual
+- gc
+- arc: revolutionary
+- ownership
+
+ownership
+- single responsible owner
+- aliasing and mutability
+- movement semantics
+- mutability requires exclusivity
+- borrowing / sharing
+
+provide safe concurrency
+- compile time!
+- library based!
+- flexibility: multi-paradigm
+- ownership based
+
+data race:
+- 2+ threads access same data
+- at least 1 is unsynchronized 
+- at least 1 write
+
+actors: forbid aliasing/sharing
+functional: forbid mutation
+
+channels:
+- emulate actors
+- send messages/data through the channel
+- now the thread owns it
+- do whatever you want: mutate
+- review data race:
+  - no aliasing, single owner, no need for synchronization!
+
+functional:
+- pass shared, immutable data between threads
+- read only
+- atomic reference counting
+- review data race:
+  - no mutation, no need for synchronization
+
+shared mutable state:
+- you must synchronize!
+- mutex, rwbarrier, etc.
+
+
+
+
+
+
+
+

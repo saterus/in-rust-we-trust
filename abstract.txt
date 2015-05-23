@@ -1,0 +1,33 @@
+Title:
+
+In Rust We Trust
+
+Abstract:
+
+Rust aims to build a solid foundation for building safe software systems faster. We can ensure fewer mistakes enter our code base with immutability by default, no concept of null, and proven memory safety. Rust's state of the art compiler helps developers catch errors as early as possible without paying a penalty at runtime. Developers can write high level code in a modern language without sacrificing expressiveness, development time, or execution speed.
+
+We will explore how Rust's concept of Ownership is the key to providing compile-time safety. These guarantees apply even in the face of concurrency, allowing you to easily write multi-threaded programs correctly the first time.
+
+Rust 1.0 was released May 15th. Start building better software today.
+
+Bio:
+
+Alex Burkhart loves creating software, but hates being woken up by production errors. He loves to pair, mentor new developers, and share knowledge with the entire community. Alex founded the Columbus Rust Society in October 2014. When he isn't programming, he is often found playing board games or rock climbing.
+
+Website: alexburkhart.com
+
+Reviewer Notes: Any additional information about your session. For example, conferences you've previously presented, attendee feedback, links to video of you speaking, etc.
+
+I presented this material as a 4 hour workshop at CodeMash 2015 to more than 60 attendees. My biggest takeaway from that experience was to allow more time for the attendees to work through the examples. I ended the day at CodeMash with twice as much material as I'd been able to present. I am presenting an improved version of that talk as an 8 hour workshop at Code PaLOUsa 2015 on April 27th.
+
+I've chosen to distill down the spirit of that workshop into a highlight reel of why Rust is so exciting. No one feature is particularly revolutionary, but the complete package is unprecedented.
+
+I'm going to highlight some of the key features of Rust. I hope to share the compromise between safety and practicality that Rust strives to achieve. My goal is infecting others with my enthusiasm.
+
+I gave a shorter form presentation to the Columbus Ruby Brigade in February. It wasn't Rust related, but it was well received:
+
+https://twitter.com/Nikon_Shooter/status/567488331470995456
+https://twitter.com/phad/status/567653417842384896
+https://twitter.com/Soodesune/status/567506442232406017
+https://twitter.com/joncanady/status/567541735283109888
+
